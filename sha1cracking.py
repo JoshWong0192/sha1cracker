@@ -1,6 +1,6 @@
 import hashlib
 import time
-
+import os
 
 def hash_sha1(inp):
     hash_value = hashlib.sha1(inp.encode())
@@ -375,7 +375,7 @@ def bruteforce(input_hash):
 
 
 if __name__ == '__main__':
-    default_dictionary = "E:\Cryptography\dict.txt"
+    default_dictionary = os.path.join(os.getcwd(), "dict.txt")
 
     
 
